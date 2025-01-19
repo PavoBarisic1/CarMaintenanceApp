@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">CarMaintenanceApp</string>
+    <string name="nav_vehicles">Vehicles</string>
+    <string name="notes">Notes</string>
+    <string name="reminders">Reminders</string>
+    <string name="more">More</string>
+    <string name="Reminders">Reminders</string>
+    <string name="Notes">Notes</string>
+    <string name="Vehicles">Vehicles</string>
+    <string name="More">More</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vehicles">vehicles</string>
+    <string name="delete">delete</string>
+    <string name="car">car</string>
+    <string name="motorcycle">motorcycle</string>
+    <string name="bus">bus</string>
+    <string name="truck">truck</string>
+    <string name="edit">edit</string>
+    <string name="diesel">diesel</string>
+    <string name="petrol">petrol</string>
+    <string name="electric">electric</string>
+    <string name="liquefied_petroleum_gas">liquefied_petroleum_gas</string>
+    <string name="compressed_natural_gas">compressed_natural_gas</string>
+    <string name="home">home</string>
+    <string name="Home">Home</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="type">Type</string>
+    <string name="Vozila">Vozila</string>
+    <string name="Bilješke">Bilješke</string>
+    <string name="Podsjetnik">Podsjetnik</string>
+    <string name="Više">Više</string>
+
+    <string-array name="vehicle_types">
+        <item>Automobile</item>
+        <item>Motorcycle</item>
+        <item>Truck</item>
+        <item>Bus</item>
+    </string-array>
+</resources>

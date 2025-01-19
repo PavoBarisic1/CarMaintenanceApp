@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "546153051302",
+    "firebase_url": "https://carmaintenanceapp-8b437-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "carmaintenanceapp-8b437",
+    "storage_bucket": "carmaintenanceapp-8b437.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546153051302:android:5b036124c2de283e9f3067",
+        "android_client_info": {
+          "package_name": "ba.sum.fsre.carmaintenanceapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3gNtsGMWTYNOrqbkY87QTTi1MM9O_qzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#F4F1F1" /> <!-- Bijela pozadina -->
+    <stroke
+        android:width="0.8dp"
+        android:color="#615E5E"
+        /> <!-- Siva boja obruba -->
+    <corners android:radius="5dp" /> <!-- Zaobljeni rubovi -->
+</shape>

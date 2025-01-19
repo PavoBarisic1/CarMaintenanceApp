@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option_car"
+        android:title="@string/car" />
+    <item
+        android:id="@+id/option_motorcycle"
+        android:title="@string/motorcycle" />
+    <item
+        android:id="@+id/option_bus"
+        android:title="@string/bus" />
+    <item
+        android:id="@+id/option_truck"
+        android:title="@string/truck" />
+</menu>
