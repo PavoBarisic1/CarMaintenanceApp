@@ -30,6 +30,7 @@
     <string name="Bilješke">Bilješke</string>
     <string name="Podsjetnik">Podsjetnik</string>
     <string name="Više">Više</string>
+    <string name="Bilješka" />
 
     <string-array name="vehicle_types">
         <item>Automobile</item>

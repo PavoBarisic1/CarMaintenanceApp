@@ -30,9 +30,7 @@ public class MainActivity extends AppCompatActivity {
             if (item.getItemId() == R.id.nav_vehicles) {
                 selectedFragment = new VehiclesFragment();
             }
-            else if (item.getItemId() == R.id.nav_notes) {
-                selectedFragment = new NotesFragment();
-            } else if (item.getItemId() == R.id.nav_reminders) {
+            else if (item.getItemId() == R.id.nav_reminders) {
                 selectedFragment = new RemindersFragment();
             } else if (item.getItemId() == R.id.nav_more) {
                 selectedFragment = new MoreFragment();

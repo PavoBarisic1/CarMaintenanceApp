@@ -42,6 +42,7 @@ public class VehiclesFragment extends Fragment {
 
         // Postavljanje adaptera na RecyclerView
         recyclerView.setAdapter(vehicleAdapter);
+
         FloatingActionButton addVehicleButton = view.findViewById(R.id.nav_add_vehicle);
         addVehicleButton.setOnClickListener(v -> {
             FragmentTransaction transaction = getParentFragmentManager().beginTransaction();

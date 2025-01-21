@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:androidx="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -31,73 +30,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Dodaj vozilo"
+            android:text="Uredi servis"
             android:textSize="18sp"
             android:textColor="#FFFFFF"
             android:layout_marginStart="16dp" />
     </androidx.appcompat.widget.Toolbar>
-
-    <!-- Add Photo Section -->
-    <LinearLayout
-        android:id="@+id/photo_section"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/rounded_box_background"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="16dp">
-
-        <ImageView
-            android:id="@+id/add_photo_icon"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/ic_add_photo"
-            android:contentDescription="Add Photo"
-            app:tint="#615E5E"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Dodaj fotografiju"
-            android:textSize="15sp"
-            />
-    </LinearLayout>
-
-    <!-- Vehicle Type and Manufacturer -->
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintTop_toTopOf="@+id/photo_section"
-        app:layout_constraintStart_toEndOf="@id/photo_section"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:orientation="vertical">
-
-        <EditText
-            android:id="@+id/vehicle_type"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="23dp"
-            android:background="@drawable/rounded_box_background"
-            android:hint="Tip vozila"
-            android:padding="12dp"
-            />
-
-        <EditText
-            android:id="@+id/manufacturer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Proizvođač"
-            android:background="@drawable/rounded_box_background"
-            android:padding="12dp"
-            />
-    </LinearLayout>
 
     <!-- Form Fields with Icons -->
     <LinearLayout
@@ -107,11 +44,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/photo_section"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Model Field -->
+        <!-- Service Type Field -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -123,20 +60,21 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:src="@drawable/ic_carmodel"
-                android:contentDescription="Model Icon"
+                android:contentDescription="Service Type Icon"
                 android:layout_marginEnd="8dp"
                 app:tint="#615E5E"/>
 
             <EditText
-                android:id="@+id/model"
+                android:id="@+id/edit_service_type"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Model"
+                android:hint="Vrsta servisa"
                 android:background="@drawable/rounded_box_background"
                 android:padding="12dp" />
         </LinearLayout>
 
+        <!-- Service Date Field -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -148,72 +86,21 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:src="@drawable/ic_calendar"
-                android:contentDescription="Model Icon"
+                android:contentDescription="Service Date Icon"
                 android:layout_marginEnd="8dp"
                 app:tint="#615E5E"/>
 
             <EditText
-                android:id="@+id/model_year"
+                android:id="@+id/edit_service_date"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Godina proizvodnje"
-                android:background="@drawable/rounded_box_background"
-                android:padding="12dp"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="20dp"
-            android:gravity="center_vertical">
-
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/ic_plates"
-                android:contentDescription="Model Icon"
-                android:layout_marginEnd="8dp"
-                app:tint="#615E5E" />
-
-            <EditText
-                android:id="@+id/license_plate"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="Registracijska oznaka"
-                android:background="@drawable/rounded_box_background"
-                android:padding="12dp"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="20dp"
-            android:gravity="center_vertical">
-
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/ic_gas"
-                android:contentDescription="Model Icon"
-                android:layout_marginEnd="8dp"
-                app:tint="#615E5E"/>
-
-            <EditText
-                android:id="@+id/fuel_type"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="Vrsta goriva"
+                android:hint="Datum servisa"
                 android:background="@drawable/rounded_box_background"
                 android:padding="12dp" />
         </LinearLayout>
 
+        <!-- Mileage Field -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -225,12 +112,12 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:src="@drawable/ic_mileage"
-                android:contentDescription="Model Icon"
+                android:contentDescription="Mileage Icon"
                 android:layout_marginEnd="8dp"
                 app:tint="#615E5E"/>
 
             <EditText
-                android:id="@+id/mileage"
+                android:id="@+id/edit_service_mileage"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -239,10 +126,60 @@
                 android:padding="12dp" />
         </LinearLayout>
 
-        <!-- Other fields follow the same pattern -->
+        <!-- Service Cost Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_euro"
+                android:contentDescription="Cost Icon"
+                android:layout_marginEnd="8dp"
+                app:tint="#615E5E"/>
+
+            <EditText
+                android:id="@+id/edit_service_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Cijena servisa"
+                android:background="@drawable/rounded_box_background"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <!-- Notes Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_notes"
+                android:contentDescription="Notes Icon"
+                android:layout_marginEnd="8dp"
+                app:tint="#615E5E"/>
+
+            <EditText
+                android:id="@+id/edit_service_notes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Bilješka"
+                android:background="@drawable/rounded_box_background"
+                android:padding="12dp" />
+        </LinearLayout>
     </LinearLayout>
 
-    <!-- Buttons (MaterialButton used here) -->
+    <!-- Buttons -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -251,10 +188,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"> <!-- Reduced marginBottom to move buttons up -->
+        android:layout_marginBottom="20dp">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/cancel_button"
+            android:id="@+id/cancel_edit_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -264,7 +201,7 @@
             android:layout_marginEnd="5dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/save_button"
+            android:id="@+id/save_edit_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
